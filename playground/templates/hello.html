@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <title> Django Project</title>
+  <style>
+    /* Add a CSS style to specify the font family */
+    body {
+      font-family: Arial, sans-serif;
+      /* Use Arial font or any other font you prefer */
+    }
+  </style>
+</head>
+
+<body>
+  {% if name %}
+  <h1>Hello {{ name }}</h1>
+  {% else %}
+  <h1>Hello World</h1>
+  {% endif %}
+  <ul>
+    {% for product in products%}
+    <li>{{product.title}}</li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>
